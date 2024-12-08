@@ -69,8 +69,9 @@ Librairies nécessaires : numpy, pandas, scikit-learn, xgboost, lightgbm, catboo
 Installation
 Clonez ce dépôt :
 
-` git clone https://github.com/samarelayed/GuessTheWinner-DataChallenge.git  
-cd GuessTheWinner-DataChallenge  `
+`` git clone https://github.com/samarelayed/GuessTheWinner-DataChallenge.git  
+
+cd GuessTheWinner-DataChallenge  ``
 
 Installez les dépendances :
 
