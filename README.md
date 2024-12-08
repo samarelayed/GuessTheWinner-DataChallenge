@@ -46,9 +46,9 @@ Les modèles ont été évalués principalement avec la métrique Accuracy, déf
 
 ##### Accuracy
 
-​$\[
+$$
 \text{Accuracy} = \frac{\text{Nombre de prédictions correctes}}{\text{Nombre total de prédictions}}
-\]$
+$$
 
 Où :  
 - Le **nombre de prédictions correctes** correspond aux instances correctement classées par le modèle.  
