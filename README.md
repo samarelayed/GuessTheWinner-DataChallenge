@@ -44,26 +44,15 @@ Les modèles testés incluent :
 ### 3. Évaluation
 Les modèles ont été évalués principalement avec la métrique Accuracy, définie comme :
 
-Accuracy
-=
-Nombre de pr
-e
-ˊ
-dictions correctes
-Nombre total de pr
-e
-ˊ
-dictions
-Accuracy= 
-Nombre total de pr 
-e
-ˊ
- dictions
-Nombre de pr 
-e
-ˊ
- dictions correctes
-​
+##### Accuracy
+
+​\[
+\text{Accuracy} = \frac{\text{Nombre de prédictions correctes}}{\text{Nombre total de prédictions}}
+\]
+
+Où :  
+- Le **nombre de prédictions correctes** correspond aux instances correctement classées par le modèle.  
+- Le **nombre total de prédictions** est le nombre total d'exemples dans les données évaluées.  
  
 ### 4. Soumissions
 Les meilleurs modèles ont été sélectionnés pour effectuer des prédictions sur les données de test et générer des fichiers de soumission.
@@ -80,8 +69,9 @@ Librairies nécessaires : numpy, pandas, scikit-learn, xgboost, lightgbm, catboo
 Installation
 Clonez ce dépôt :
 
-``` git clone https://github.com/samarelayed/GuessTheWinner-DataChallenge.git  
-cd GuessTheWinner-DataChallenge  ```
+` git clone https://github.com/samarelayed/GuessTheWinner-DataChallenge.git  
+cd GuessTheWinner-DataChallenge  `
+
 Installez les dépendances :
 
 Exécution
