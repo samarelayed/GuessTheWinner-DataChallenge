@@ -23,24 +23,25 @@ team_data_processing.ipynb : Notebook contenant le traitement des données et l'
 player_data_processing.ipynb : Notebook dédié au traitement et à l'analyse des données des joueurs.
 README.md : Ce fichier contenant la description du projet.
 ## Méthodologie
-1. Prétraitement des données
+### 1. Prétraitement des données
 Gestion des valeurs manquantes (imputation par médiane).
 Transformation et normalisation des données avec StandardScaler.
 Réduction de la dimensionnalité avec PCA.
 Gestion des déséquilibres de classe avec SMOTE-Tomek Links.
-2. Modèles utilisés
+### 2. Modèles utilisés
 Les modèles testés incluent :
 
-Random Forest
-Gradient Boosting
-XGBoost
-LightGBM
-CatBoost
-K-Nearest Neighbors (KNN)
-Neural Networks
-Logistic Regression
-Ensemble Methods (Stacking, Voting)
-3. Évaluation
+* Random Forest
+* Gradient Boosting
+* XGBoost
+* LightGBM
+* CatBoost
+* K-Nearest Neighbors (KNN)
+* Neural Networks
+* Logistic Regression
+* Ensemble Methods (Stacking, Voting)
+
+### 3. Évaluation
 Les modèles ont été évalués principalement avec la métrique Accuracy, définie comme :
 
 Accuracy
@@ -64,28 +65,25 @@ e
  dictions correctes
 ​
  
-4. Soumissions
+### 4. Soumissions
 Les meilleurs modèles ont été sélectionnés pour effectuer des prédictions sur les données de test et générer des fichiers de soumission.
 
 Résultats
-Le modèle Ensemble Methods a obtenu la meilleure précision de 0.40917 sur les données de test.
+Le modèle Ensemble Methods a obtenu la meilleure accuracy de 0.478 sur les données de test.
 Les performances des autres modèles sont détaillées dans les notebooks.
-Installation et Exécution
-Prérequis
-Python 3.8+
+
+#### Installation et Exécution
+Prérequis: Python 3.8+
+
 Librairies nécessaires : numpy, pandas, scikit-learn, xgboost, lightgbm, catboost, matplotlib, seaborn, shap.
+
 Installation
 Clonez ce dépôt :
 
-bash
-Copy code
-git clone https://github.com/samarelayed/GuessTheWinner-DataChallenge.git  
-cd GuessTheWinner-DataChallenge  
+``` git clone https://github.com/samarelayed/GuessTheWinner-DataChallenge.git  
+cd GuessTheWinner-DataChallenge  ```
 Installez les dépendances :
 
-bash
-Copy code
-pip install -r requirements.txt  
 Exécution
 Lancez les notebooks dans votre environnement préféré (ex. : Jupyter Notebook, VS Code, Google Colab) pour reproduire les analyses et les résultats.
 
