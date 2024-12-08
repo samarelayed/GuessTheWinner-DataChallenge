@@ -9527,7 +9527,7 @@ weighted avg       0.40      0.29      0.21      9228
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Feature Importance</span>
 <span class="n">importances</span> <span class="o">=</span> <span class="n">gb_model</span><span class="o">.</span><span class="n">feature_importances_</span>
-<span class="n">feature_names</span> <span class="o">=</span> <span class="n">X_train_scaled</span><span class="o">.</span><span class="n">columns</span>
+<span class="n">feature_names</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">columns</span>
 <span class="n">feature_importance</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">'Feature'</span><span class="p">:</span> <span class="n">feature_names</span><span class="p">,</span> <span class="s1">'Importance'</span><span class="p">:</span> <span class="n">importances</span><span class="p">})</span>
 <span class="n">feature_importance</span> <span class="o">=</span> <span class="n">feature_importance</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">'Importance'</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Top 10 Features:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">feature_importance</span><span class="p">)</span>
@@ -9923,17 +9923,6 @@ Pourcentage de paires fortement corrélées: 0.21%
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Nous pouvons remarquer avec les figures ci-dessus l'évolution du score par rapport au nombre de voisins pour chaque métrique utilisé. Nous observons l'effet du overfitting quand nous avons un nombre des voisins faibles. C'est possible de remarquer aussi une stabilisation de l'évolution du score après 100 voisins.!!!!!</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="XGBClassifier">XGBClassifier<a class="anchor-link" href="#XGBClassifier">¶</a></h3>
 </div>
 </div>
@@ -10089,7 +10078,7 @@ Pourcentage de paires fortement corrélées: 0.21%
 <span class="n">shap_values</span> <span class="o">=</span> <span class="n">explainer</span><span class="o">.</span><span class="n">shap_values</span><span class="p">(</span><span class="n">X_train_scaled</span><span class="p">)</span>
 
 <span class="c1"># Visualize for 'POSITION'</span>
-<span class="n">shap</span><span class="o">.</span><span class="n">summary_plot</span><span class="p">(</span><span class="n">shap_values</span><span class="p">,</span> <span class="n">X_train_scaled</span><span class="p">,</span> <span class="n">feature_names</span><span class="o">=</span><span class="n">X_train_scaled</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<span class="n">shap</span><span class="o">.</span><span class="n">summary_plot</span><span class="p">(</span><span class="n">shap_values</span><span class="p">,</span> <span class="n">X_train_scaled</span><span class="p">,</span> <span class="n">feature_names</span><span class="o">=</span><span class="n">X_train</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
